@@ -1,5 +1,20 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const sumsArray = [];
+    // check each element
+    for (let a = 0; a < array.length; a++)
+    {
+      for (let b = a + 1; b < array.length; b++)
+      {
+        //checks if it sums up to the target
+        if (array[a] + array[b]===target)
+        return true;
+          
+        } 
+        
+      } 
+          //sums.push([array[i], array[j]]);
+       return false; 
 }
 
 /* 
@@ -8,10 +23,12 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  
 */
 
 /*
   Add written explanation of your solution here
+  The function should return true if any pair of numbers in the array adds up to the target number.
 */
 
 // You can run `node index.js` to view these console logs
